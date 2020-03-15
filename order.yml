@@ -1,0 +1,17 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  #自定义eureka 客户端连接,访问客户端的时候显示名称
+  instance:
+    instance-id: order-server
+spring:
+  application:
+    name: order-server
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: 123456
+    url: jdbc:mysql://127.0.0.1:3306/SpringCloud_Sell?characterEncoding=utf-8&useSSL=false
+    username: root
+server:
+  port: 7080
